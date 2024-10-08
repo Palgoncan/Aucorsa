@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 header {
@@ -51,9 +51,15 @@ header {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
+    position: relative;
 }
 
-.image-links a img {
+.image-link {
+    position: relative;
+    display: inline-block;
+}
+
+.image-link img {
     width: 350px;
     height: 250px;
     object-fit: cover;
@@ -61,14 +67,72 @@ header {
     transition: transform 0.3s;
 }
 
-.image-links a:hover img {
+.image-link:hover img {
     transform: scale(1.05);
 }
 
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 4.5em;
+    text-align: center;
+}
+
 .slider {
+    position: relative;
+    max-width: 80%;
+    /* Ajusta el ancho según lo necesites */
+    margin: 40px auto;
+    overflow: hidden;
+    /* Oculta las imágenes fuera del contenedor */
+}
+
+.slider-container {
     display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    transition: transform 0.5s ease;
+    /* Transición suave para el cambio de imágenes */
+}
+
+.slider-image {
+    min-width: 100%;
+    /* Cada imagen ocupa el 100% del ancho del slider */
+    display: none;
+    /* Ocultar todas las imágenes inicialmente */
+}
+
+.slider-image.active {
+    display: block;
+    /* Solo la imagen activa se muestra */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Fondo semitransparente */
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    /* Tamaño del icono */
+    padding: 10px;
+    border-radius: 50%;
+    /* Hacer botones redondeados */
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+    /* Posición del botón anterior */
+}
+
+.next {
+    right: 10px;
+    /* Posición del botón siguiente */
 }
 
 .slider img {

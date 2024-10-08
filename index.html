@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,13 +24,28 @@
 
     <main>
         <section class="image-links">
-            <a href="pagina1.html"><img src="img/1.png" alt="Líneas"></a>
-            <a href="pagina2.html"><img src="img/2.png" alt="Tarjetas"></a>
-            <a href="pagina3.html"><img src="img/3.png" alt="Precios"></a>
+            <a href="pagina1.html" class="image-link">
+                <img src="img/fondo.png" alt="Líneas">
+                <span class="image-text">Líneas</span>
+            </a>
+            <a href="pagina2.html" class="image-link">
+                <img src="img/fondo.png" alt="Tarjetas">
+                <span class="image-text">Tarjetas</span>
+            </a>
+            <a href="pagina3.html" class="image-link">
+                <img src="img/fondo.png" alt="Precios">
+                <span class="image-text">Precios</span>
+            </a>
         </section>
 
         <section class="slider">
-            <img src="slider.jpg" alt="Slider de imágenes">
+            <div class="slider-container">
+                <img src="img/slider1.jpg" alt="Imagen 1" class="slider-image active">
+                <img src="img/slider2.jpg" alt="Imagen 2" class="slider-image">
+                <img src="img/slider3.jpg" alt="Imagen 3" class="slider-image">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
         </section>
     </main>
 
@@ -52,10 +70,14 @@
         </div>
         <div class="social-media">
             <a href="https://x.com/aucorsa"><img src="img/x-blanco.png" alt="X"></a>
-            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/aucorsa.es/?locale=es_ES"><img src="img/facebook-blanco.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png"
+                    alt="Instagram"></a>
+            <a href="https://www.facebook.com/aucorsa.es/?locale=es_ES"><img src="img/facebook-blanco.png"
+                    alt="Facebook"></a>
         </div>
     </footer>
+
+    <script src="/js/slider.js"></script>
 </body>
 
 </html>
