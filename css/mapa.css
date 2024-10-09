@@ -1,0 +1,10 @@
+/* style.css */
+.hui-info-bubble {
+    background-color: white;
+    border: 2px solid #39A735;
+    /* Color corporativo */
+    border-radius: 8px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
