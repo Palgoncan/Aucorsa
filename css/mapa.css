@@ -1,10 +1,148 @@
-/* style.css */
-.hui-info-bubble {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
     background-color: white;
-    border: 2px solid #39A735;
-    /* Color corporativo */
-    border-radius: 8px;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header .logo img {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+header .logo img:hover {
+    transform: scale(1.05);
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d0d0d0;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+.bus-info {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.bus-info p {
+    margin: 0;
+    color: #39A735;
+    font-weight: bold;
+}
+
+
+.map-container {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.bus-stops {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.bus-stops h2 {
+    color: #39A735;
+    margin-bottom: 15px;
+}
+
+.bus-stops ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bus-stops ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+footer {
+    background-color: #413f3f;
+    padding: 40px 20px;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-container .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ayuntamiento-logo {
+    margin-top: 10px;
+    max-width: 120px;
+}
+
+.footer-container .column img {
+    max-width: 150px;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-container p {
+    line-height: 1.6;
+}
+
+.social-media {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 10px;
 }
