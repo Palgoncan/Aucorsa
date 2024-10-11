@@ -18,7 +18,12 @@ header {
 }
 
 .logo img {
-    max-width: 150px;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 .header-buttons {
@@ -48,13 +53,52 @@ header {
     background-color: #333;
 }
 
-
-
-h1 {
-    color: #39A735;
-    font-weight: bold;
+main {
+    text-align: center;
+        /* Centrar el contenido en el body */
+        color: #4a4a4a;
+        /* Gris oscuro para todo el texto */
 }
 
+main h1 {
+    color: #39A735;
+    /* Color corporativo */
+    font-weight: bold;
+    text-align: center;
+    /* Centrar el título */
+    margin: 20px 0;
+    /* Margen arriba y abajo */
+}
+
+main p {
+    text-align: left;
+    /* Justificado a la izquierda */
+    margin: 20px 20%;
+    /* Márgenes amplios a ambos lados */
+    line-height: 1.8;
+    /* Aumentar la altura de línea */
+}
+
+main a {
+    color: #39A735;
+    /* Color corporativo */
+    text-decoration: underline;
+    /* Subrayado */
+    font-weight: bold;
+    /* Negrita */
+}
+
+main h2 {
+    color: #39A735;
+    /* Color corporativo */
+    font-weight: bold;
+    text-align: left;
+    /* Justificado a la izquierda */
+    text-decoration: underline;
+    /* Subrayado */
+    margin: 20px 20%;
+    /* Márgenes amplios a ambos lados */
+}
 
 footer {
     background-color: #413f3f;
@@ -113,7 +157,7 @@ footer {
     padding: 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .footer-bottom a {
@@ -149,10 +193,8 @@ footer {
     transform: scale(1.1);
 }
 
-
 /* Media query para pantallas móviles */
 @media (max-width: 768px) {
-
     .footer-container {
         flex-direction: row;
         align-items: center;
