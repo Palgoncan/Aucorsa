@@ -55,49 +55,51 @@ header {
 
 main {
     text-align: center;
-    /* Centrar el contenido en el body */
     color: #4a4a4a;
-    /* Gris oscuro para todo el texto */
 }
 
 main h1 {
     color: #39A735;
-    /* Color corporativo */
     font-weight: bold;
     text-align: center;
-    /* Centrar el título */
     margin: 20px 0;
-    /* Margen arriba y abajo */
 }
 
 main p {
     text-align: left;
-    /* Justificado a la izquierda */
     margin: 20px 20%;
-    /* Márgenes amplios a ambos lados */
     line-height: 1.8;
-    /* Aumentar la altura de línea */
+}
+
+main ul {
+    text-align: left;
+    margin: 20px 20%;
+    line-height: 1.8;
+}
+
+main table {
+    text-align: left;
+    margin: 20px 20%;
+    line-height: 1.8;
+}
+
+td img {
+    height: 30px;
+    width: 30px;
 }
 
 main a {
     color: #39A735;
-    /* Color corporativo */
     text-decoration: underline;
-    /* Subrayado */
     font-weight: bold;
-    /* Negrita */
 }
 
 main h2 {
     color: #39A735;
-    /* Color corporativo */
     font-weight: bold;
     text-align: left;
-    /* Justificado a la izquierda */
     text-decoration: underline;
-    /* Subrayado */
     margin: 20px 20%;
-    /* Márgenes amplios a ambos lados */
 }
 
 footer {

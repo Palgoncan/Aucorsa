@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
 }
 
 header {
@@ -14,15 +14,15 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
+    background-color: #f4f4f4;
 }
 
-.logo img {
+header .logo img {
     width: 150px;
     transition: transform 0.3s ease;
 }
 
-.logo img:hover {
+header .logo img:hover {
     transform: scale(1.05);
 }
 
@@ -53,34 +53,52 @@ header {
     background-color: #333;
 }
 
-main {
+.bus-info {
+    padding: 20px;
+    background-color: white;
     text-align: center;
-    color: #4a4a4a;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
+    font-size: 20px;
+}
+
+.bus-info p {
     margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 20px;
-    text-align: left;
-    width: 50%;
-}
-
-ul ul {
-    margin-left: 20px;
-    border-left: 2px solid #39A735;
-    padding-left: 10px;
-}
-
-li {
-    margin: 5px 0;
+    color: #39A735;
+    font-weight: bold;
 }
 
 
+.map-container {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.bus-stops {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.bus-stops h2 {
+    color: #39A735;
+    margin-bottom: 15px;
+}
+
+.bus-stops ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bus-stops ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
 
 footer {
     background-color: #413f3f;
@@ -139,7 +157,7 @@ footer {
     padding: 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .footer-bottom a {
@@ -175,8 +193,23 @@ footer {
     transform: scale(1.1);
 }
 
+
 /* Media query para pantallas móviles */
 @media (max-width: 768px) {
+    .image-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-link {
+        margin-bottom: 20px;
+    }
+
+    .image-link img {
+        width: 90%;
+        height: auto;
+    }
+
     .footer-container {
         flex-direction: row;
         align-items: center;

@@ -4,13 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aucorsa - Línea 1</title>
+    <title>Aucorsa - Mapa del sitio</title>
     <link rel="stylesheet" href="css/mapa.css">
     <link rel="shortcut icon" href="img/Logotipo-aucorsa.png" type="image">
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript"></script>
-    <script src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,37 +23,66 @@
         </div>
     </header>
 
-
-    <section class="bus-info">
-        <p>Línea 1 - Paradas del recorrido</p>
-    </section>
-
-
-    <section class="map-container">
-        <div id="map"></div>
-    </section>
-
-    <section class="bus-stops">
-        <h2>Paradas en orden:</h2>
+    <main>
         <ul>
-            <li>Claudio Marcelo (Tendillas)</li>
-            <li>Diario Córdoba</li>
-            <li>San Fernando</li>
-            <li>El Potro (la Ribera)</li>
-            <li>Cuesta de la Pólvora</li>
-            <li>Puerta Nueva</li>
-            <li>Avda. Barcelona D.C.</li>
-            <li>Marrubial (Puerta Plasencia)</li>
-            <li>Agrupación Córdoba</li>
-            <li>Agrupación Córdoba (Iglesia)</li>
-            <li>Guaraní</li>
-            <li>Mahatma Gandhi</li>
-            <li>Ntra. Sra. de la Merced</li>
-            <li>Fátima (Dr. Nevado del Rey)</li>
-            <li>Fátima (Arcos de la Frontera)</li>
-            <li>Fátima</li>
+            <li>Portada</li>
+            <li>Muévete en bus
+                <ul>
+                    <li>Líneas y horarios</li>
+                    <li>Títulos y tarifas
+                        <ul>
+                            <li>Billetes</li>
+                            <li>Billete electrónico</li>
+                            <li>Tarjeta de AUCORSA</li>
+                            <li>Tarjeta bono-bus ordinario</li>
+                            <li>Tarjeta bono-bus estudiante</li>
+                            <li>Tarjeta bono-bus familia numerosa</li>
+                            <li>Tarjeta bono-bus servicios especiales</li>
+                            <li>Tarjeta 30 días</li>
+                            <li>Tarjeta joven</li>
+                            <li>Tarjeta pensionista</li>
+                            <li>Tarjeta turística</li>
+                        </ul>
+                    </li>
+                    <li>Gestión de tarjetas
+                        <ul>
+                            <li>Gestión y Recarga Online de Tarjetas</li>
+                            <li>Recarga por Bizum</li>
+                            <li>Recarga por PayThunder</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Atención al cliente
+                <ul>
+                    <li>Contacto</li>
+                    <li>Consultas, reclamaciones y agradecimientos</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Objetos perdidos</li>
+                    <li>Derechos y obligaciones</li>
+                    <li>Estado del servicio</li>
+                </ul>
+            </li>
+            <li>AUCORSA al día</li>
+            <li>La empresa
+                <ul>
+                    <li>Conócenos
+                        <ul>
+                            <li>Quiénes somos</li>
+                            <li>Instalaciones centrales</li>
+                            <li>Nuestra flota</li>
+                            <li>Empleo</li>
+                        </ul>
+                    </li>
+                    <li>Perfil del contratante</li>
+                    <li>Portal de transparencia</li>
+                    <li>Movilidad accesible</li>
+                    <li>Movilidad sostenible</li>
+                </ul>
+            </li>
         </ul>
-    </section>
+    </main>
+
 
     <footer>
         <div class="footer-container">
@@ -77,14 +103,15 @@
                 <p>Plaza de Colón s/n<br>Córdoba - 14001<br>957 476 450</p>
             </div>
         </div>
-    
+
         <div class="social-media">
             <a href="https://x.com/aucorsa"><img src="img/x-blanco.png" alt="X"></a>
-            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png"
+                    alt="Instagram"></a>
             <a href="https://www.facebook.com/aucorsa.es/?locale=es_ES"><img src="img/facebook-blanco.png"
                     alt="Facebook"></a>
         </div>
-    
+
         <div class="footer-bottom">
             <div class="footer-bottom-left">
                 <p>© Autobuses de Córdoba, S.A.</p>
@@ -93,7 +120,7 @@
                 <a href="cookies.html">Política de cookies</a> |
                 <a href="legal.html">Aviso legal y política de privacidad</a> |
                 <a href="acceso.html">Accesibilidad</a> |
-                <a href="#">Mapa del sitio</a>
+                <a href="mapa.html">Mapa del sitio</a>
             </div>
             <div class="footer-bottom-right">
                 <a href="#" class="back-to-top">
@@ -102,8 +129,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="js/mapa.js"></script>
 </body>
 
 </html>
