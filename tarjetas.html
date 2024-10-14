@@ -27,10 +27,14 @@
     </div>
 
     <main>
+        <div class="titulo">
+            <h1>Venta y gestión de tarjetas</h1>
+        </div>
+        
         <div class="cards-container">
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front-1">
                         <div class="card-header">
                             <p class="heading_8264">Bono-Bus Pensionistas</p>
                             <div class="contactless-icon">
@@ -46,17 +50,16 @@
                             <p class="name">Javier Martínez Gómez</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida de Ollerías, Plaza de Colón, Ronda de los
-                            Tejares.</p>
+                    <div class="flip-card-back-1">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para pensionistas que cumplan con los requisitos económicos.</p>
                     </div>
                 </div>
             </div>
 
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front-2">
                         <div class="card-header">
                             <p class="heading_8264">Bono-Bus Estudiantes</p>
                             <div class="contactless-icon">
@@ -72,16 +75,16 @@
                             <p class="name">Sofía Fernández López</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida Medina Azahara, Paseo de la Victoria.</p>
+                    <div class="flip-card-back-2">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para estudiantes con carnet de estudiante válido.</p>
                     </div>
                 </div>
             </div>
 
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front-3">
                         <div class="card-header">
                             <p class="heading_8264">Bono-Bus Jóvenes</p>
                             <div class="contactless-icon">
@@ -97,16 +100,16 @@
                             <p class="name">Luis García Pérez</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida del Aeropuerto, Gran Vía Parque.</p>
+                    <div class="flip-card-back-3">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para jóvenes menores de 31 años con Carnet Jóven.</p>
                     </div>
                 </div>
             </div>
 
             <div class="flip-card">
                 <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                    <div class="flip-card-front-4">
                         <div class="card-header">
                             <p class="heading_8264">Bono-Bus General</p>
                             <div class="contactless-icon">
@@ -122,12 +125,29 @@
                             <p class="name">María Rodríguez Sánchez</p>
                         </div>
                     </div>
-                    <div class="flip-card-back">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida República Argentina, Glorieta Cruz Roja.</p>
+                    <div class="flip-card-back-4">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono ordinario para cualquier persona.</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="recarga-saldo">
+            <h2>Punto de Recarga de Saldo</h2>
+            <form action="https://sis.redsys.es/sis/realizarPago" method="POST">
+                <div class="form-group">
+                    <label for="numero-tarjeta">Número de tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="Introduce tu número de tarjeta"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="importe-recarga">Importe a recargar (€):</label>
+                    <input type="number" id="importe-recarga" name="importe-recarga" placeholder="Introduce el importe" required
+                        min="1">
+                </div>
+                <button type="submit" class="btn-recargar">Recargar Saldo</button>
+            </form>
         </div>
     </main>
 
