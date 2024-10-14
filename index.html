@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aucorsa</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="img/Logotipo-aucorsa.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logotipo-aucorsa.png" alt="Logo">
+        </div>
+        <div class="header-buttons">
+            <a href="contacto.html" class="btn">Contacto</a>
+            <a href="login.html" class="btn btn-dark">Iniciar Sesión</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="image-links">
+            <a href="lineas.html" class="image-link">
+                <img src="img/fondo.png" alt="Líneas">
+                <span class="image-text">Líneas</span>
+            </a>
+            <a href="tarjetas.html" class="image-link">
+                <img src="img/fondo.png" alt="Tarjetas">
+                <span class="image-text">Tarjetas</span>
+            </a>
+            <a href="pagina3.html" class="image-link">
+                <img src="img/fondo.png" alt="Precios">
+                <span class="image-text">Precios</span>
+            </a>
+        </section>
+
+        <section class="slider">
+            <div class="slider-container">
+                <img src="img/slider1.jpeg" alt="Imagen 1" class="slider-image active">
+                <img src="img/slider2.jpeg" alt="Imagen 2" class="slider-image">
+                <img src="img/slider3.jpeg" alt="Imagen 3" class="slider-image">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <img src="img/Logotipo-aucorsa.png" alt="Logo">
+                <img src="img/Logo-Ayto-Cordoba-blanco.png" alt="Ayuntamiento de Córdoba" class="ayuntamiento-logo">
+            </div>
+            <div class="column">
+                <h3>Oficinas centrales</h3>
+                <p>C/ Los Artesanos s/n<br>Córdoba - 14014</p>
+            </div>
+            <div class="column">
+                <h3>Contacto</h3>
+                <p>957 764 676<br>900 859 876<br>aucorsa@aucorsa.es</p>
+            </div>
+            <div class="column">
+                <h3>Oficina Atención al Cliente</h3>
+                <p>Plaza de Colón s/n<br>Córdoba - 14001<br>957 476 450</p>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://x.com/aucorsa"><img src="img/x-blanco.png" alt="X"></a>
+            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/aucorsa.es/?locale=es_ES"><img src="img/facebook-blanco.png"
+                    alt="Facebook"></a>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>© Autobuses de Córdoba, S.A.</p>
+            </div>
+            <div class="footer-bottom-center">
+                <a href="cookies.html">Política de cookies</a> |
+                <a href="legal.html">Aviso legal y política de privacidad</a> |
+                <a href="acceso.html">Accesibilidad</a> |
+                <a href="mapa.html">Mapa del sitio</a>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#" class="back-to-top">
+                    <img src="img/arrow.png" alt="Volver arriba">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/js/slider.js"></script>
+</body>
+
+</html>
