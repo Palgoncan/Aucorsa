@@ -67,12 +67,19 @@ header {
     object-fit: contain;
 }
 
+.titulo {
+    color: #39A735;
+    margin-top: 30px;
+    text-align: center;
+}
+
 /* Card styles */
 .cards-container {
     display: flex;
     justify-content: space-around;
-    margin: 50px 20px;
+    margin: 50px 200px;
     flex-wrap: wrap;
+    max-width: 80%;
 }
 
 .flip-card {
@@ -107,15 +114,86 @@ header {
     padding: 20px;
 }
 
-.flip-card-front {
+.flip-card-front-1 {
     background-color: #39a735;
+    background-image: url('../img/old-couple.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    opacity: 0.9;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.flip-card-back {
+.flip-card-front-2 {
+    background-color: #39a735;
+    background-image: url('../img/libros.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flip-card-front-3 {
+    background-color: #39a735;
+    background-image: url('../img/personas-silueta.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flip-card-front-4 {
+    background-color: #39a735;
+    background-image: url('../img/people.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    opacity: 0.9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.flip-card-back-1, 
+.flip-card-back-2,
+.flip-card-back-3, 
+.flip-card-back-4  {
     background-color: #fff;
     color: black;
     transform: rotateY(180deg);
@@ -124,12 +202,22 @@ header {
     align-items: center;
     text-align: center;
     padding: 30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.heading_8264 {
+    font-weight: bold;
 }
 
 .contactless-icon img {
@@ -275,5 +363,10 @@ footer {
 
     .social-media a img {
         margin: 0 5px;
+    }
+
+    .cards-container {
+        margin: 50px 100px;
+        max-width: 100%;
     }
 }
