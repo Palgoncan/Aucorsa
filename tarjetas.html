@@ -51,9 +51,8 @@
                         </div>
                     </div>
                     <div class="flip-card-back-1">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida de Ollerías, Plaza de Colón, Ronda de los
-                            Tejares.</p>
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para pensionistas que cumplan con los requisitos económicos.</p>
                     </div>
                 </div>
             </div>
@@ -77,8 +76,8 @@
                         </div>
                     </div>
                     <div class="flip-card-back-2">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida Medina Azahara, Paseo de la Victoria.</p>
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para estudiantes con carnet de estudiante válido.</p>
                     </div>
                 </div>
             </div>
@@ -102,8 +101,8 @@
                         </div>
                     </div>
                     <div class="flip-card-back-3">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida del Aeropuerto, Gran Vía Parque.</p>
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para jóvenes menores de 31 años con Carnet Jóven.</p>
                     </div>
                 </div>
             </div>
@@ -127,11 +126,28 @@
                         </div>
                     </div>
                     <div class="flip-card-back-4">
-                        <p class="heading_8264">DETALLES</p>
-                        <p class="description">Recorrido principal: Avenida República Argentina, Glorieta Cruz Roja.</p>
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono ordinario para cualquier persona.</p>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="recarga-saldo">
+            <h2>Punto de Recarga de Saldo</h2>
+            <form action="https://sis.redsys.es/sis/realizarPago" method="POST">
+                <div class="form-group">
+                    <label for="numero-tarjeta">Número de tarjeta:</label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="Introduce tu número de tarjeta"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="importe-recarga">Importe a recargar (€):</label>
+                    <input type="number" id="importe-recarga" name="importe-recarga" placeholder="Introduce el importe" required
+                        min="1">
+                </div>
+                <button type="submit" class="btn-recargar">Recargar Saldo</button>
+            </form>
         </div>
     </main>
 
