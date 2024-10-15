@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aucorsa</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
     <link rel="shortcut icon" href="img/Logotipo-aucorsa.png" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="logo">
             <img src="img/Logotipo-aucorsa.png" alt="Logo">
@@ -23,6 +22,27 @@
             <a href="login.html" class="btn btn-dark">Iniciar Sesión</a>
         </div>
     </header>
+
+    <!-- Imagen alargada añadida directamente aquí -->
+    <div class="image-banner">
+        <img src="img/imagen_alargada.jpg" alt="Banner Alargado" class="banner-image">
+        <div class="recharge-container">
+            <h2>Recargar mi tarjeta AUCORSA</h2>
+            <form>
+                <label for="card-number">Número de tarjeta</label>
+                <div class="input-button-container">
+                    <button type="submit" class="recharge-button">Recargar</button>
+                    <input type="text" id="card-number" placeholder="Ingrese el número de su tarjeta">
+                </div>
+                <p class="info-text">* El número de la tarjeta aparece en el reverso de la misma.</p>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">Acepto <span class="underline">Política de Privacidad y Condiciones
+                            Generales</span> de Recarga online</label>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <main>
         <section class="image-links">
@@ -49,13 +69,6 @@
                 <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
         </section>
-        <div id="overlay" class="overlay">
-            <h1>¿Qué Aucorsa quieres?</h1>
-            <div class="button-container">
-                <button id="jovenes" class="btn">Jóvenes</button>
-                <button id="mayores" class="btn">Mayores</button>
-            </div>
-        </div>
     </main>
 
     <footer>
@@ -105,7 +118,6 @@
     </footer>
 
     <script src="/js/slider.js"></script>
-    <script src="/js/script.js"></script> <!-- Asegúrate de incluir el script -->
 </body>
 
 </html>
