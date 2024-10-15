@@ -20,6 +20,8 @@
 
         .container {
             text-align: center;
+            display: none;
+            /* Ocultar inicialmente */
         }
 
         h2 {
@@ -54,6 +56,44 @@
         .logo img {
             width: 150px;
         }
+
+        /* Estilos para el modal */
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        .close-btn {
+            background-color: #39A735;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .close-btn:hover {
+            background-color: #2e8c2b;
+        }
     </style>
 </head>
 
@@ -63,11 +103,26 @@
             <img src="img/Logotipo-aucorsa.png" alt="Logo Aucorsa">
         </a>
     </div>
-    <div class="container">
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <p>En Aucorsa nos preocupamos por las personas y, por ello, hemos creado una página adaptada para personas
+                mayores o con visión reducida, y otra no adaptada. Por favor, elige la opción que prefieras.</p>
+            <button class="close-btn" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+    <div class="container" id="mainContent">
         <h2>Selecciona tu opción</h2>
         <button onclick="window.location.href='index1.html'">Mayores</button>
         <button onclick="window.location.href='index2.html'">Jóvenes</button>
     </div>
+
+    <script>
+        // Función para cerrar el modal
+        function closeModal() {
+            document.getElementById("infoModal").style.display = "none"; // Ocultar el modal
+            document.getElementById("mainContent").style.display = "block"; // Mostrar el contenido principal
+        }
+    </script>
 </body>
 
 </html>
