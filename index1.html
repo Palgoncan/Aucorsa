@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aucorsa - Contacto</title>
-    <link rel="stylesheet" href="/css/contacto.css">
+    <title>Aucorsa</title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="img/Logotipo-aucorsa.png" type="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,55 +13,40 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
-            <a href="index1.html">
-                <img src="img/Logotipo-aucorsa.png" alt="Logo Aucorsa">
-            </a>
+            <img src="img/Logotipo-aucorsa.png" alt="Logo">
         </div>
         <div class="header-buttons">
-            <a href="index1.html" class="btn">Inicio</a>
+            <a href="contacto.html" class="btn">Contacto</a>
             <a href="login.html" class="btn btn-dark">Iniciar Sesión</a>
         </div>
     </header>
 
     <main>
-        <section class="contact-cards">
-            <div class="card">
-                <img src="img/phone.png" alt="Teléfono" class="card-icon">
-                <h3>Teléfono</h3>
-                <p>957 764 676</p>
-                <a href="tel:957764676" class="btn">Llamar</a>
-            </div>
-            <div class="card">
-                <img src="img/post.png" alt="Email" class="card-icon">
-                <h3>Email</h3>
-                <p>aucorsa@aucorsa.es</p>
-                <a href="mailto:aucorsa@aucorsa.es" class="btn">Enviar Email</a>
-            </div>
+        <section class="image-links">
+            <a href="lineas.html" class="image-link">
+                <img src="img/fondo.png" alt="Líneas">
+                <span class="image-text">Líneas</span>
+            </a>
+            <a href="tarjetas.html" class="image-link">
+                <img src="img/fondo.png" alt="Tarjetas">
+                <span class="image-text">Tarjetas</span>
+            </a>
+            <a href="precios.html" class="image-link">
+                <img src="img/fondo.png" alt="Precios">
+                <span class="image-text">Precios</span>
+            </a>
         </section>
 
-        <section class="login-container">
-            <div class="login-box">
-                <h1>Contáctanos</h1>
-                <form>
-                    <div class="form-row">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" placeholder="Tu nombre">
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" placeholder="Tu correo">
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Mensaje</label>
-                        <textarea id="message" placeholder="Tu mensaje"></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
-                <div class="help-text">
-                    <p>¿Necesitas más ayuda? <a href="login.html">Inicia sesión aquí</a>.</p>
-                </div>
+        <section class="slider">
+            <div class="slider-container">
+                <img src="img/slider1.jpeg" alt="Imagen 1" class="slider-image active">
+                <img src="img/slider2.jpeg" alt="Imagen 2" class="slider-image">
+                <img src="img/slider3.jpeg" alt="Imagen 3" class="slider-image">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
             </div>
         </section>
     </main>
@@ -85,14 +70,15 @@
                 <p>Plaza de Colón s/n<br>Córdoba - 14001<br>957 476 450</p>
             </div>
         </div>
-    
+
         <div class="social-media">
             <a href="https://x.com/aucorsa"><img src="img/x-blanco.png" alt="X"></a>
-            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png"
+                    alt="Instagram"></a>
             <a href="https://www.facebook.com/aucorsa.es/?locale=es_ES"><img src="img/facebook-blanco.png"
                     alt="Facebook"></a>
         </div>
-    
+
         <div class="footer-bottom">
             <div class="footer-bottom-left">
                 <p>© Autobuses de Córdoba, S.A.</p>
@@ -110,6 +96,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="/js/slider.js"></script>
 </body>
 
 </html>
