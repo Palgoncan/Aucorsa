@@ -248,6 +248,7 @@ footer {
 
 
 /* Media query para pantallas móviles */
+/* Media query para pantallas móviles */
 @media (max-width: 768px) {
     .image-links {
         flex-direction: column;
@@ -289,5 +290,42 @@ footer {
 
     .footer-bottom {
         display: none;
+    }
+
+    /* Estilos para las cards en pantallas pequeñas */
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .first-content,
+    .second-content {
+        opacity: 1;
+        height: auto;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: none;
+        padding: 10px;
+    }
+
+    .second-content {
+        display: block;
+    }
+
+    /* Ocultar efectos de transición al hover */
+    .card:hover .first-content {
+        opacity: 1;
+        height: auto;
+    }
+
+    .card:hover .second-content {
+        opacity: 1;
+        height: auto;
     }
 }
