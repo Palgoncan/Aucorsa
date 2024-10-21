@@ -399,6 +399,11 @@ footer {
     transform: scale(1.1);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Media query for mobile */
 @media (max-width: 768px) {
     .cards-container {
@@ -433,5 +438,28 @@ footer {
     .cards-container {
         margin: 50px 100px;
         max-width: 100%;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+        /* Desactivar el hover */
+    }
+
+    /* Activar el giro al hacer click */
+    .flip-card.clicked .flip-card-inner {
+        transform: rotateY(180deg);
+        /* Gira solo al hacer clic */
+    }
+
+    /* Asegurar que las cards estén centradas con margen a los lados */
+    .cards-container {
+        margin: 0 20px;
+        /* Ajuste de márgenes en pantallas pequeñas */
+        max-width: 100%;
+        /* Asegurarse de que se ajuste bien al contenedor */
+        flex-direction: column;
+        /* Alinear verticalmente */
+        align-items: center;
+        /* Centrar las tarjetas */
     }
 }
