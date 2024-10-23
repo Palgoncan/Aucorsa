@@ -404,7 +404,7 @@ a {
     color: inherit;
 }
 
-/* Media query for mobile */
+/* Media query para móvil */
 @media (max-width: 768px) {
     .cards-container {
         flex-direction: column;
@@ -445,6 +445,15 @@ a {
         max-width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: none;
+    }
+
+
+    .flip-card-inner.rotate {
+        transform: rotateY(180deg);
     }
 
 }
