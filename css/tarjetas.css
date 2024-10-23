@@ -447,7 +447,7 @@ a {
         align-items: center;
     }
 
-    .flip-card:hover .flip-card-inner {
+    .flip-card:hover {
         transform: none;
     }
 
