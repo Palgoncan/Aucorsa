@@ -242,6 +242,10 @@ footer {
         height: auto;
     }
 
+    .image-text{
+        margin-left: -10px;
+    }
+
     .footer-container {
         flex-direction: row;
         align-items: center;
