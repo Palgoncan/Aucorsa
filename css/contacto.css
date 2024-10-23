@@ -308,6 +308,10 @@ footer {
         text-decoration: none;
     }
 
+    .card p{
+        color: #000;
+    }
+
     .footer-container {
         flex-direction: row;
         align-items: center;
