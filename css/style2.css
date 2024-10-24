@@ -55,106 +55,16 @@ header {
 /* Estilos para el banner y el contenedor de recarga */
 .image-banner {
     position: relative;
+    max-height: 500px; /* This reduces the size of the banner */
+    overflow: hidden;
 }
+
 
 .banner-image {
     width: 100%;
     height: auto;
 }
 
-.recharge-container {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    background-color: #22c55e; /* Color verde */
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    color: white;
-    max-width: 500px;
-    width: 90%;
-}
-
-.recharge-container h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.recharge-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.recharge-container label {
-    margin-bottom: 5px;
-}
-
-/* Contenedor para el botón de recarga y el input */
-.input-button-container {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
-
-/* Estilos para los inputs */
-.recharge-container input[type="text"] {
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    flex-grow: 1;
-    width: auto;
-}
-
-/* Texto de información */
-.recharge-container .info-text {
-    font-size: 0.8em;
-    margin-bottom: 10px;
-}
-
-/* Estilos para el checkbox de términos */
-.recharge-container .terms-checkbox {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 15px;
-}
-
-.recharge-container .terms-checkbox input[type="checkbox"] {
-    margin-right: 10px;
-    margin-top: 3px;
-}
-
-.recharge-container .terms-checkbox label {
-    font-size: 0.9em;
-    line-height: 1.4;
-}
-
-.recharge-container .underline {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/* Estilos para el botón de recarga */
-.recharge-button {
-    background-color: #16a34a; /* Color verde */
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    font-size: 1.1em;
-    font-weight: bold;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-.recharge-button:hover {
-    background-color: #15803d; /* Color verde oscuro */
-    transform: translateY(-2px);
-}
 
 /* Estilos para los enlaces de imagen */
 .image-links {
@@ -170,12 +80,13 @@ header {
 }
 
 .image-link img {
-    width: 350px;
-    height: 250px;
+    width: 250px; /* Reducido de 350px a 250px */
+    height: 180px; /* Reducido de 250px a 180px */
     object-fit: cover;
     border-radius: 5px;
     transition: transform 0.3s;
 }
+
 
 .image-link:hover img {
     transform: scale(1.05);
@@ -188,15 +99,14 @@ header {
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Outfit', sans-serif;
-    font-size: 4.5em;
+    font-size: 2em; /* Reducido de 4.5em a 2em */
     text-align: center;
 }
 
-/* Estilos para el slider */
 .slider {
     position: relative;
-    max-width: 80%;
-    margin: 40px auto;
+    max-width: 60%; /* Reducido de 80% a 60% */
+    margin: 30px auto; /* Margen reducido */
     overflow: hidden;
 }
 
@@ -206,24 +116,24 @@ header {
 }
 
 .slider-image {
-    min-width: 100%;
-    display: none;
+    display: none; /* Oculta todas las imágenes */
 }
 
 .slider-image.active {
-    display: block;
+    display: block; /* Muestra solo la imagen con la clase 'active' */
 }
 
-/* Estilos para los botones del slider */
+
+/* Ajustes de los botones del slider */
 button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7); /* Botones más visibles */
     border: none;
     cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
+    font-size: 18px; /* Tamaño de la fuente del botón reducido */
+    padding: 5px; /* Botones más pequeños */
     border-radius: 50%;
     z-index: 1;
 }
@@ -237,9 +147,10 @@ button {
 }
 
 .slider img {
-    width: 80%;
+    width: 100%; /* Asegura que las imágenes llenen el ancho del slider */
     height: auto;
 }
+
 
 /* Estilos del footer */
 footer {
@@ -359,23 +270,94 @@ footer {
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
+    /* Ajustes generales del body */
+    body {
+        padding: 10px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row; /* Alinea los elementos en fila */
+        padding: 10px;
+    }
+
+    /* Ajustes del logo */
+    .logo img {
+        max-width: 100px; /* Ajustamos el tamaño del logo */
+    }
+
+    /* Alineación de botones a la derecha */
+    .header-buttons {
+        display: flex;
+        flex-direction: column; /* Apilamos los botones uno debajo del otro */
+        align-items: flex-end; /* Alineamos los botones a la derecha */
+        gap: 10px;
+    }
+
+    .btn {
+        width: auto;
+        padding: 8px 16px; /* Ajustamos el tamaño de los botones */
+    }
+    /* Banner */
+    .image-banner {
+        max-height: 250px;
+    }
+
+    .banner-image {
+        width: 100%;
+        height: auto;
+    }
+
     .image-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Espacio entre las imágenes */
+        padding: 0 15px; /* Margen lateral */
+    }
+
+    /* Hacer las imágenes más alargadas */
+    .image-link {
+        width: 100%; /* Ocupa el 100% del espacio disponible */
+        max-width: 90%; /* Con un máximo del 90% del contenedor */
+        height: 200px; /* Ajustamos la altura para hacerlas más alargadas */
+    }
+
+    .image-link img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    /* Ajuste del texto */
+    .image-text {
+        font-size: 1.2em; /* Ajustamos el tamaño de la letra un poco más grande */
+    }
+
+
+
+    /* Slider */
+    .slider {
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Footer */
+    .footer-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .image-link {
+    .footer-container .column {
+        width: 100%;
         margin-bottom: 20px;
-    }
-
-    .image-link img {
-        width: 90%;
-        height: auto;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        align-items: center;
     }
 
     .footer-container .column:nth-child(3),
@@ -383,9 +365,8 @@ footer {
         display: none;
     }
 
-    .footer-container .column {
-        width: 100%;
-        margin-bottom: 20px;
+    .footer-bottom {
+        display: none;
     }
 
     .social-media {
@@ -397,7 +378,4 @@ footer {
         margin: 0 5px;
     }
 
-    .footer-bottom {
-        display: none;
-    }
 }

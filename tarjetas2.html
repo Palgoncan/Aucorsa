@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aucorsa - Tarjetas de Autobús</title>
+    <link rel="stylesheet" href="css/tarjetas2.css">
+    <link rel="stylesheet" href="css/recharge-container2.css">
+    <link rel="shortcut icon" href="img/Logotipo-aucorsa.png" type="image">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index2.html">
+                <img src="img/Logotipo-aucorsa.png" alt="Logo Aucorsa">
+            </a>
+        </div>
+        <div class="header-buttons">
+            <a href="contacto.html" class="btn">Contacto</a>
+            <a href="login.html" class="btn btn-dark">Iniciar Sesión</a>
+        </div>
+    </header>
+
+    <div class="cabeceraTarjetas">
+        <img src="img/cabeceraTarjetas.png" class="cabecera">
+    </div>
+
+    <main>
+        <div class="titulo">
+            <h1>Venta y gestión de tarjetas</h1>
+        </div>
+
+        <div class="cards-container">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front-1">
+                        <div class="card-header">
+                            <p class="heading_8264">Bono-Bus Pensionistas</p>
+                            <div class="contactless-icon">
+                                <img src="img/contactless.png" alt="Contactless">
+                            </div>
+                        </div>
+                        <div class="chip">
+                            <img src="img/chip.png" alt="Chip">
+                        </div>
+                        <div class="card-details">
+                            <p class="number">4827 8392 1745 0923</p>
+                            <p class="valid_thru">05/25</p>
+                            <p class="name">Javier Martínez Gómez</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back-1">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para pensionistas que cumplan con los requisitos económicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front-2">
+                        <div class="card-header">
+                            <p class="heading_8264">Bono-Bus Estudiantes</p>
+                            <div class="contactless-icon">
+                                <img src="img/contactless.png" alt="Contactless">
+                            </div>
+                        </div>
+                        <div class="chip">
+                            <img src="img/chip.png" alt="Chip">
+                        </div>
+                        <div class="card-details">
+                            <p class="number">1934 7265 4819 3720</p>
+                            <p class="valid_thru">05/25</p>
+                            <p class="name">Sofía Fernández López</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back-2">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para estudiantes con carnet de estudiante válido.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front-3">
+                        <div class="card-header">
+                            <p class="heading_8264">Bono-Bus Jóvenes</p>
+                            <div class="contactless-icon">
+                                <img src="img/contactless.png" alt="Contactless">
+                            </div>
+                        </div>
+                        <div class="chip">
+                            <img src="img/chip.png" alt="Chip">
+                        </div>
+                        <div class="card-details">
+                            <p class="number">8571 0492 6738 1504</p>
+                            <p class="valid_thru">05/25</p>
+                            <p class="name">Luis García Pérez</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back-3">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono para jóvenes menores de 31 años con Carnet Jóven.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front-4">
+                        <div class="card-header">
+                            <p class="heading_8264">Bono-Bus General</p>
+                            <div class="contactless-icon">
+                                <img src="img/contactless.png" alt="Contactless">
+                            </div>
+                        </div>
+                        <div class="chip">
+                            <img src="img/chip.png" alt="Chip">
+                        </div>
+                        <div class="card-details">
+                            <p class="number">9265 3810 4927 5638</p>
+                            <p class="valid_thru">05/25</p>
+                            <p class="name">María Rodríguez Sánchez</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back-4">
+                        <p class="heading_8265">DETALLES</p>
+                        <p class="description">Abono ordinario para cualquier persona.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recarga-container">
+            <h1>Recargar mi tarjeta</h1>
+            <p>AUCORSA</p>
+            <form action="https://sis.redsys.es/sis/realizarPago" method="POST">
+                <div class="input-field">
+                    <label for="numero-tarjeta" class="input-label"></label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta"
+                        placeholder="Introduce tu número de tarjeta" required>
+                </div>
+                <div class="recargar-button">
+                    <button type="submit">Recargar</button>
+                </div>
+
+                <div class="note">
+                    * El número de la tarjeta aparece en el reverso de la misma.
+                </div>
+
+                <div class="accept-terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Acepto <a href="legal.html">Política de Privacidad y Condiciones Generales</a> de
+                        Recarga online</label>
+                </div>
+            </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <img src="img/Logotipo-aucorsa.png" alt="Logo">
+                <img src="img/Logo-Ayto-Cordoba-blanco.png" alt="Ayuntamiento de Córdoba" class="ayuntamiento-logo">
+            </div>
+            <div class="column">
+                <h3>Oficinas centrales</h3>
+                <p>C/ Los Artesanos s/n<br>Córdoba - 14014</p>
+            </div>
+            <div class="column">
+                <h3>Contacto</h3>
+                <p>957 764 676<br>900 859 876<br>aucorsa@aucorsa.es</p>
+            </div>
+            <div class="column">
+                <h3>Oficina Atención al Cliente</h3>
+                <p>Plaza de Colón s/n<br>Córdoba - 14001<br>957 476 450</p>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://x.com/aucorsa"><img src="img/x-blanco.png" alt="X"></a>
+            <a href="https://www.instagram.com/aucorsa.cordoba/"><img src="img/instagram-blanco.png"
+                    alt="Instagram"></a>
+            <a href="https://www.facebook.com/aucorsa.es/?locale=es_ES"><img src="img/facebook-blanco.png"
+                    alt="Facebook"></a>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>© Autobuses de Córdoba, S.A.</p>
+            </div>
+            <div class="footer-bottom-center">
+                <a href="#">Política de cookies</a> |
+                <a href="#">Aviso legal y política de privacidad</a> |
+                <a href="#">Accesibilidad</a> |
+                <a href="#">Mapa del sitio</a>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#" class="back-to-top">
+                    <img src="img/arrow.png" alt="Volver arriba">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/tarjetas.js"></script>
+</body>
+
+</html>

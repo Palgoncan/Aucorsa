@@ -1,0 +1,153 @@
+/* Estilos para el contenedor de recarga */
+.recarga-container {
+    background-color: #39A735;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    top: 180px;
+    left: 120px;
+    z-index: 10;
+}
+
+.recarga-container h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+.recarga-container p {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+    color: #333;
+}
+
+.input-field {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.recargar-button {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.recargar-button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2d7a2e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.recargar-button button:hover {
+    background-color: #1e5521;
+}
+
+.accept-terms {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #000;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.accept-terms input {
+    margin-right: 5px;
+}
+
+.accept-terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.accept-terms a:hover {
+    text-decoration: underline;
+}
+
+.note {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Contenedor de recarga */
+    .recarga-container {
+        position: static; /* Cambiamos la posición a estática para móviles */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin: 20px auto; /* Añadimos un margen superior para separación */
+        padding: 20px; /* Reducimos el padding */
+        left: 0; /* Quitamos el desplazamiento lateral */
+        top: 0; /* Quitamos el desplazamiento vertical */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Reducimos la sombra */
+    }
+
+    /* Título */
+    .recarga-container h1 {
+        font-size: 20px; /* Reducimos el tamaño de la fuente */
+        margin: 0 0 15px 0;
+    }
+
+    /* Texto */
+    .recarga-container p {
+        font-size: 13px; /* Reducimos el tamaño de la fuente */
+        margin: 5px 0 15px 0;
+    }
+
+    /* Input de tarjeta */
+    .input-field input {
+        padding: 8px; /* Reducimos el padding del input */
+        font-size: 14px; /* Reducimos el tamaño de la fuente */
+    }
+
+    /* Botón de recargar */
+    .recargar-button {
+        margin-top: 15px;
+    }
+
+    .recargar-button button {
+        padding: 8px; /* Reducimos el padding del botón */
+        font-size: 14px; /* Reducimos el tamaño de la fuente */
+    }
+
+    /* Aceptar términos */
+    .accept-terms {
+        font-size: 11px; /* Reducimos el tamaño de la fuente */
+    }
+
+    .note {
+        font-size: 11px; /* Reducimos el tamaño de la fuente */
+        margin-top: 10px;
+    }
+}

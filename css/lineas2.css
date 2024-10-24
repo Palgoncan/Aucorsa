@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.cabeceraLineas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cabecera {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.lineas-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Para distribuir bien el espacio entre las tarjetas */
+    padding: 40px;
+    max-width: 1200px; /* Aumentamos el max-width para 4 tarjetas cómodamente */
+    margin: 0 auto;
+}
+
+.card {
+    width: 18%; /* Reducimos el ancho para que sean más pequeñas */
+    height: 160px; /* Reducimos la altura */
+    transition: all 0.4s;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    font-size: 24px; /* Reducimos el tamaño del texto */
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 1.5%; /* Ajustamos el margen para espaciar bien las tarjetas */
+}
+
+
+.linea1 {
+    background: rgb(103, 225, 255);
+}
+
+.linea1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+.linea2 {
+    background: rgb(255, 103, 103);
+}
+
+.linea3 {
+    background: rgb(255, 255, 103);
+}
+
+.linea4 {
+    background: rgb(103, 255, 103);
+}
+
+.linea5 {
+    background: rgb(103, 103, 255);
+}
+
+.linea6 {
+    background: rgb(255, 103, 255);
+}
+
+.linea7 {
+    background: rgb(255, 165, 0);
+}
+
+.linea8 {
+    background: rgb(0, 255, 255);
+}
+
+.linea9 {
+    background: rgb(128, 0, 128);
+}
+
+.linea10 {
+    background: rgb(255, 183, 77); /* Color personalizado para la línea 10 */
+}
+
+.linea11 {
+    background: rgb(77, 255, 77); /* Color personalizado para la línea 11 */
+}
+
+.linea12 {
+    background: rgb(77, 77, 255); /* Color personalizado para la línea 12 */
+}
+
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.first-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.card:hover .first-content {
+    opacity: 0;
+    height: 0;
+}
+
+.second-content {
+    opacity: 0;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    font-size: 0;
+    transform: rotate(90deg) scale(-1);
+    padding-left: 1rem;
+}
+
+.card:hover .second-content {
+    opacity: 1;
+    height: 100%;
+    font-size: 1.8rem;
+    transform: rotate(0deg);
+}
+
+footer {
+    background-color: #413f3f;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-container .column {
+    flex: 1;
+}
+
+.footer-container .column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ayuntamiento-logo {
+    margin-top: 10px;
+    max-width: 120px;
+}
+
+.footer-container .column img {
+    max-width: 150px;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-container p {
+    line-height: 1.6;
+}
+
+.social-media {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-media a img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom-left {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-bottom-center {
+    flex: 2;
+    text-align: center;
+}
+
+.footer-bottom-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-bottom-right a img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.footer-bottom-right a:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Media query para pantallas móviles */
+/* Media query para pantallas móviles */
+@media (max-width: 768px) {
+    .image-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-link {
+        margin-bottom: 20px;
+    }
+
+    .image-link img {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-container .column:nth-child(3),
+    .footer-container .column:nth-child(4) {
+        display: none;
+    }
+
+    .footer-container .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media a img {
+        margin: 0 5px;
+    }
+
+    .footer-bottom {
+        display: none;
+    }
+
+    /* Estilos para las cards en pantallas pequeñas */
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .first-content,
+    .second-content {
+        opacity: 1;
+        height: auto;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: none;
+        padding: 10px;
+    }
+
+    .second-content {
+        display: block;
+    }
+
+    /* Ocultar efectos de transición al hover */
+    .card:hover .first-content {
+        opacity: 1;
+        height: auto;
+    }
+
+    .card:hover .second-content {
+        opacity: 1;
+        height: auto;
+    }
+}

@@ -1,0 +1,155 @@
+/* Contenedor general */
+.recarga-container {
+    background-color: #39A735;
+    padding: 20px;
+    border-radius: 0; /* Mantener forma rectangular */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 800px; /* Ancho mayor para una forma más alargada horizontalmente */
+    height: auto; /* Ajuste automático de la altura */
+    max-width: 100%; /* Limita el ancho al 100% en dispositivos pequeños */
+    text-align: center;
+    margin: 40px auto;
+    box-sizing: border-box;
+    position: relative; /* Cambiado a relative para que siga el flujo normal de la página */
+    z-index: 10; /* Control de capas */
+}
+
+/* Encabezado */
+.recarga-container h1 {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #000;
+}
+
+/* Texto del párrafo */
+.recarga-container p {
+    font-size: 14px;
+    margin: 10px 0 20px 0;
+    color: #333;
+}
+
+/* Campo de entrada */
+.input-field {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Botón de recargar */
+.recargar-button {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.recargar-button button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2d7a2e;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.recargar-button button:hover {
+    background-color: #1e5521;
+}
+
+/* Aceptación de términos */
+.accept-terms {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #000;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.accept-terms input {
+    margin-right: 5px;
+}
+
+.accept-terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.accept-terms a:hover {
+    text-decoration: underline;
+}
+
+/* Nota */
+.note {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Ajustes generales del contenedor */
+    .recarga-container {
+        width: 90%; /* Reducimos el ancho para móviles */
+        margin: 20px auto;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Encabezado */
+    .recarga-container h1 {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+
+    /* Párrafos */
+    .recarga-container p {
+        font-size: 13px;
+        margin: 5px 0 15px 0;
+    }
+
+    /* Entrada de texto */
+    .input-field input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Botón de recargar */
+    .recargar-button {
+        margin-top: 15px;
+    }
+
+    .recargar-button button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* Aceptación de términos */
+    .accept-terms {
+        font-size: 11px;
+    }
+
+    /* Nota */
+    .note {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+}

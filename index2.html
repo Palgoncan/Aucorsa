@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/css/style2.css">
     <link rel="stylesheet" href="/css/recharge-container.css">
     <link rel="shortcut icon" href="img/Logotipo-aucorsa.png" type="image/png">
-    <!-- Asegúrate de que el tipo de imagen sea correcto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
@@ -18,7 +17,6 @@
     <header>
         <div class="logo">
             <img src="img/Logotipo-aucorsa.png" alt="Logo de Aucorsa" loading="lazy">
-            <!-- Agregado loading="lazy" para optimizar la carga de imágenes -->
         </div>
         <div class="header-buttons">
             <a href="contacto.html" class="btn">Contacto</a>
@@ -26,38 +24,48 @@
         </div>
     </header>
 
-    <!-- Imagen alargada añadida directamente aquí -->
     <div class="image-banner">
         <img src="img/imagen_alargada.jpg" alt="Banner Alargado" class="banner-image" loading="lazy">
-        <div class="recharge-container">
-            <h2>Recargar mi tarjeta AUCORSA</h2>
-            <form>
-                <div class="input-container">
-                    <input type="text" id="card-number" placeholder="Número de tarjeta" required>
-                    <p class="info-text">* El número de la tarjeta aparece en el reverso de la misma.</p>
-                </div>
-                <div class="terms-checkbox">
-                    <input type="checkbox" id="terms" required>
-                    <label for="terms">Acepto <span class="underline">Política de Privacidad y Condiciones
-                            Generales</span> de Recarga online</label>
-                </div>
-                <button type="submit" class="recharge-button">Recargar</button>
-            </form>
-        </div>
-
     </div>
 
     <main>
+        <div class="recarga-container">
+            <h1>Recargar mi tarjeta</h1>
+            <p>AUCORSA</p>
+            <form action="https://sis.redsys.es/sis/realizarPago" method="POST">
+                <div class="input-field">
+                    <label for="numero-tarjeta" class="input-label"></label>
+                    <input type="text" id="numero-tarjeta" name="numero-tarjeta"
+                        placeholder="Introduce tu número de tarjeta" required>
+                </div>
+                <div class="recargar-button">
+                    <button type="submit">Recargar</button>
+                </div>
+
+                <div class="note">
+                    * El número de la tarjeta aparece en el reverso de la misma.
+                </div>
+
+                <div class="accept-terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Acepto <a href="legal.html">Política de Privacidad y Condiciones Generales</a> de
+                        Recarga online</label>
+                </div>
+
+
+            </form>
+        </div>
+
         <section class="image-links">
-            <a href="lineas.html" class="image-link">
+            <a href="lineas2.html" class="image-link">
                 <img src="img/fondo.png" alt="Líneas" loading="lazy">
                 <span class="image-text">Líneas</span>
             </a>
-            <a href="tarjetas.html" class="image-link">
+            <a href="tarjetas2.html" class="image-link">
                 <img src="img/fondo.png" alt="Tarjetas" loading="lazy">
                 <span class="image-text">Tarjetas</span>
             </a>
-            <a href="precios.html" class="image-link">
+            <a href="precios2.html" class="image-link">
                 <img src="img/fondo.png" alt="Precios" loading="lazy">
                 <span class="image-text">Precios</span>
             </a>
@@ -124,20 +132,6 @@
 
     <script src="/js/slider.js"></script>
     <script src="/js/script.js"></script>
-    <script>
-        // Función para manejar el envío del formulario de recarga
-        function handleRecharge(event) {
-            event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
-            const cardNumber = document.getElementById('card-number').value;
-            alert(`Recarga realizada para la tarjeta: ${cardNumber}`); // Alerta de confirmación
-            document.getElementById('rechargeForm').reset(); // Reinicia el formulario
-        }
-
-        // Función para desplazarse hacia arriba
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave
-        }
-    </script>
 </body>
 
 </html>
